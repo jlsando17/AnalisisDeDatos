@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label=<pneumonia &le; 1.5<br/>gini = 0.481<br/>samples = 242211<br/>value = [97787, 144424]>, fillcolor="#bfdff7"] ;
+1 [label=<age &le; 20.5<br/>gini = 0.441<br/>samples = 31351<br/>value = [21064, 10287]>, fillcolor="#f2bf9a"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<age &le; 8.5<br/>gini = 0.322<br/>samples = 1431<br/>value = [289, 1142]>, fillcolor="#6bb6ec"] ;
+1 -> 2 ;
+3 [label=<gini = 0.237<br/>samples = 882<br/>value = [121, 761]>, fillcolor="#58ade9"] ;
+2 -> 3 ;
+4 [label=<gini = 0.425<br/>samples = 549<br/>value = [168, 381]>, fillcolor="#90c8f0"] ;
+2 -> 4 ;
+5 [label=<age &le; 35.5<br/>gini = 0.424<br/>samples = 29920<br/>value = [20775, 9145]>, fillcolor="#f0b890"] ;
+1 -> 5 ;
+6 [label=<gini = 0.487<br/>samples = 3936<br/>value = [2286, 1650]>, fillcolor="#f8dcc8"] ;
+5 -> 6 ;
+7 [label=<gini = 0.41<br/>samples = 25984<br/>value = [18489, 7495]>, fillcolor="#f0b489"] ;
+5 -> 7 ;
+8 [label=<age &le; 32.5<br/>gini = 0.463<br/>samples = 210860<br/>value = [76723, 134137]>, fillcolor="#aad5f4"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<age &le; 9.5<br/>gini = 0.432<br/>samples = 72210<br/>value = [22780, 49430]>, fillcolor="#94caf1"] ;
+8 -> 9 ;
+10 [label=<gini = 0.335<br/>samples = 5161<br/>value = [1098, 4063]>, fillcolor="#6fb7ec"] ;
+9 -> 10 ;
+11 [label=<gini = 0.438<br/>samples = 67049<br/>value = [21682, 45367]>, fillcolor="#98ccf1"] ;
+9 -> 11 ;
+12 [label=<intubed &le; 49.5<br/>gini = 0.475<br/>samples = 138650<br/>value = [53943, 84707]>, fillcolor="#b7dbf6"] ;
+8 -> 12 ;
+13 [label=<gini = 0.49<br/>samples = 7947<br/>value = [4548, 3399]>, fillcolor="#f8dfcd"] ;
+12 -> 13 ;
+14 [label=<gini = 0.47<br/>samples = 130703<br/>value = [49395, 81308]>, fillcolor="#b1d9f5"] ;
+12 -> 14 ;
+}
